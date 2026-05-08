@@ -222,7 +222,20 @@ tbody tr:last-child td { border-bottom: none; }
 .alert-success { background: #e0f5ea; color: #1a5a35; border-color: var(--success); }
 .alert-danger  { background: #fde8e8; color: #8b1a1a; border-color: var(--danger); }
 .alert-info    { background: #e0eeff; color: #1a3a6e; border-color: var(--info); }
+/* ── FORM VALIDATION (HDTD-63) ── */
+.form-control.input-error {
+    border-color: var(--danger) !important;
+    background-color: #fff5f5;
+    box-shadow: 0 0 0 3px rgba(184,50,50,0.10);
+}
 
+.error-msg {
+    color: var(--danger);
+    font-size: 0.82rem;
+    margin-top: 5px;
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+}
 /* ── FILTERS ── */
 .filters-bar {
     background: var(--surface);
