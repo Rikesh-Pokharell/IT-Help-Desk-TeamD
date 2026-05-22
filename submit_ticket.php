@@ -179,7 +179,7 @@ include 'includes/header.php';
         </div>
     </div>
 
-    <!-- User guidance section -->
+    <!-- User guidance  -->
     <div class="card mt-3" style="margin-top:20px;background:var(--bg);">
         <div class="card-body">
 
