@@ -56,9 +56,13 @@ switch ($action) {
         $ticket = $result->fetch_assoc();
         if ($ticket) {
             echo json_encode(['success' => true, 'ticket' => $ticket]);
-        } else {
-            echo json_encode(['success' => false, 'message' => 'Ticket not found']);
-        }
+       // } else {
+           // echo json_encode(['success' => false, 'message' => 'Ticket not found']);
+       // }
+       } else {
+    http_response_code(404);
+    echo json_encode(['success' => false, 'message' => 'Ticket not found']);
+}
         break;
 
     // POST - create new ticket
