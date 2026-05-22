@@ -6,7 +6,8 @@ if (isLoggedIn()) { header("Location: " . APP_URL . "/dashboard.php"); exit(); }
 $error = $success = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $full_name  = sanitize($_POST['full_name'] ?? '');
+    //ull_name  = sanitize($_POST['full_name'] ?? '');
+    $full_name = trim(sanitize($_POST['full_name'] ?? ''));
     $email      = sanitize($_POST['email'] ?? '');
     $college_id = sanitize($_POST['college_id'] ?? '');
     $role       = sanitize($_POST['role'] ?? 'student');
